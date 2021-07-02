@@ -1,0 +1,885 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<aiml version="1.0">
+
+ <meta name="language" content="en"/>
+ <category>
+    <pattern>MATHEMATICS</pattern>
+    <template><srai>MATHS</srai></template>
+  </category>
+
+ <category>
+
+    <pattern>MATHS</pattern>
+    <template><think><set name = "subject">maths</set></think>
+    How many points did you have?
+
+
+	</template>
+</category>
+
+<category>
+    <pattern>GEOGRAPHY</pattern>
+    <template><think><set name = "subject">geography</set></think>
+		How many points did you have?
+    </template>
+</category>
+
+<category>
+    <pattern>PHYSICS</pattern>
+    <template><think><set name = "subject">physics</set></think>
+		How many points did you have?
+     </template>
+</category>
+
+<category>
+    <pattern>CHEMISTRY</pattern>
+    <template><think><set name = "subject">chemistry</set></think>
+		How many points did you have?
+    </template>
+</category>
+
+<category>
+    <pattern>BIOLOGY</pattern>
+    <template><think><set name = "subject">biology</set></think>
+		How many points did you have?
+    </template>
+</category>
+
+<category>
+    <pattern>ACCOUNTS</pattern>
+    <template><think><set name = "subject">accounts</set></think>
+		How many points did you have?
+    </template>
+</category>
+
+
+<category>
+    <pattern>MATHS AND BIOLOGY</pattern>
+    <template><think><set name = "subject">mb</set></think>
+		How many points did you have?
+    </template>
+</category>
+
+<category>
+    <pattern>BIOLOGY AND MATHS</pattern>
+    <template><srai>MATHS AND BIOLOGY</srai></template>
+  </category>
+  
+  <category>
+    <pattern>CHEMISTRY AND MATHS</pattern>
+    <template><srai>MATHS AND CHEMISTRY</srai></template>
+  </category>
+  
+<category>
+    <pattern>MATHS AND CHEMISTRY</pattern>
+    <template><think><set name = "subject">mc</set></think>
+		How many points did you have?
+    </template>
+</category>
+
+<category>
+    <pattern>CHEMISTRY AND BIOLOGY</pattern>
+    <template><think><set name = "subject">cb</set></think>
+		How many points did you have?
+    </template>
+</category>
+
+ <category>
+    <pattern>BIOLOGY AND CHEMISTRY</pattern>
+    <template><srai>CHEMISTRY AND BIOLOGY</srai></template>
+  </category>
+
+<category>
+    <pattern>MATHS AND PHYSICS</pattern>
+    <template><think><set name = "subject">mp</set></think>
+		How many points did you have?
+    </template>
+</category>
+
+<category>
+    <pattern>MATHS AND GEOGRAPHY</pattern>
+    <template><think><set name = "subject">mg</set></think>
+		How many points did you have?
+    </template>
+</category>
+
+<category>
+    <pattern>PHYSICS AND MATHS</pattern>
+    <template><srai>MATHS AND PHYSICS</srai></template>
+  </category>
+
+  
+<category>
+    <pattern>GEOGRAPHY AND MATHS</pattern>
+    <template><srai>MATHS AND GEOGRAPHY</srai></template>
+  </category>
+
+ 
+<category>
+    <pattern>CHEMISTRY AND PHYSICS</pattern>
+    <template><think><set name = "subject">cp</set></think>
+		How many points did you have?
+    </template>
+</category>
+
+<category>
+    <pattern>PHYSICS AND CHEMISTRY</pattern>
+    <template><srai>CHEMISTRY AND PHYSICS</srai></template>
+  </category>
+
+  <category>
+    <pattern>MATHEMATICS</pattern>
+    <template><srai>MATHS</srai></template>
+  </category>
+
+
+ <category>
+      <pattern>EDUCATION</pattern>
+      <template>
+		Okay,  Let's talk about <set name="topic">EDUCATION</set>.How many points do you have?
+	  </template>
+    </category>
+
+    <topic name="EDUCATION">
+		
+	 <category>
+			<pattern>10</pattern>
+			<template>
+			
+			<condition name ="gender" value ="male">
+			
+			</condition>
+
+			<condition name = "gender" value = "female">
+		
+			</condition>
+
+			</template>
+
+			</category>
+		</topic>
+ <category>
+	<pattern>LAW</pattern>
+	<template>
+	  Okay, Let's talk about  <set name="topic">LAW</set>
+	  At least a 'B' in 'O' Level English Language and good 'A' levels in any subject
+combination.
+	</template>
+  </category>
+
+  <topic name="LAW">
+
+	  <category>
+		<pattern>15</pattern>
+		<template>
+		<condition name ="gender" value ="">
+			You haven't told me you Gender(M/F).
+				</condition>
+				<condition name ="subject" value ="">
+					You haven't told me your Best A level subject.
+						</condition>
+		<condition name ="gender" value ="male">
+			B. Laws Hons. (LLBS) 
+			At least a “B’ in ‘O’ Level English Language and good ‘A’ Levels in any subject
+			  combination.
+		</condition>
+
+		<condition name = "gender" value = "female">
+			B. Laws Hons. (LLBS) 
+			At least a “B’ in ‘O’ Level English Language and good ‘A’ Levels in any subject
+			  combination.
+		</condition>
+		</template>
+		</category>
+		<category>
+			<pattern>16</pattern>
+			<template>
+			  <srai>15</srai>
+			</template>
+		  </category>
+		  <category>
+			<pattern>17</pattern>
+			<template>
+			  <srai>15</srai>
+			</template>
+		  </category>
+		  <category>
+			<pattern>18</pattern>
+			<template>
+			  <srai>15</srai>
+			</template>
+		  </category>
+		  <category>
+			<pattern>19</pattern>
+			<template>
+			  <srai>15</srai>
+			</template>
+		  </category>
+		  <category>
+			<pattern>20</pattern>
+			<template>
+			  <srai>15</srai>
+			</template>
+		  </category>
+		  <category>
+			<pattern>21</pattern>
+			<template>
+			  <srai>15</srai>
+			</template>
+		  </category>
+
+		<category>
+			<pattern>*</pattern>
+		
+			<template>
+		      My bad <get name="username"/> Law cut off 15 points and above.
+			  Feel free to check other Arts UNDERGRADUATE PROGRAMME or Please goto this link to view the undertaking by College Admissions :  https://www.uz.ac.zw/index.php/admissions/undergraduate
+			</template>
+		  </category>
+  
+ </topic>
+
+ <category>
+
+	<pattern>SCIENCES</pattern>
+	<template>
+	  Okay,  Let's talk about  <set name="topic">SCIENCES</set>  Please take NOTE :'O' Level passes in English Language and Maths are compulsory for all
+	  programmes in the Faculty of Science.
+	   What's your best A`level Science subject.(Either 1 or 2subjects)
+	</template>
+ </category>
+
+  <topic name="SCIENCES">
+
+
+	<category>
+		<pattern>*</pattern>
+	
+		<template>
+		 <get name="username"/> The cut off is 7 to 10 points for our Sciences.If you are above 10 l advice you to check Vet Science or Engineering.Press 10 to check out the  best for Sciences.
+		Please goto this link to view the undertaking by UZ Admissions :  https://www.uz.ac.zw/index.php/admissions/undergraduate
+		</template>
+	  </category>
+	 <category>
+		<pattern>10</pattern>
+		<template>
+			<condition name ="gender" value ="">
+				You haven't told me you Gender(M/F).
+					</condition>
+					<condition name ="subject" value ="">
+						You haven't told me your Best A level subject.
+							</condition>
+		<condition name ="gender" value ="male">
+			<condition name ="subject" value="maths">
+				BSc Honours Mathematics and Computational Science - MCHor 
+				BSc Honours Actuarial Science - HASC
+			</condition>
+			<condition name ="subject" value="mp">
+                    
+				BSc Honours Space Science and Technology - HSST
+				BSc Honours Industrial Physics - HIPH
+			</condition>
+			<condition name ="subject" value="cb">
+				BSc Honours Forensic Science - 
+				a) Forensic Biology and Forensic Biochemistry;
+		
+			</condition>
+			<condition name ="subject" value="cb">
+			
+				b) Forensic Biology and Forensic Chemistry;
+				
+			</condition>
+			<condition name ="subject" value="cb">
+				c) Forensic Biochemistry and Forensic Chemistry,
+			</condition>
+			<condition name ="subject" value="cp">
+				BSc Honours Forensic Science - HFSSC  Forensic Physics and Forensic Chemistry	
+			</condition>
+			<condition name ="subject" value="mc">
+				BSc Honours Industrial Chemistry-HICH
+			</condition>
+		 
+		</condition>
+
+		<condition name = "gender" value = "female">
+			<condition name = "subject" value = "biology">
+				BSc Honours Biodiversity and Heritage Conservation-HBHC
+			</condition>
+			<condition name = "subject" value = "mc">
+				BSc Honours Pharmaceutical Chemistry-HPHC
+			</condition>
+			<condition name = "subject" value = "cb">
+				Clinical Biochemistry and Toxicology;-HBCCBT
+			</condition>
+			<condition name = "subject" value = "geography">
+				BSc Honours Geographical Information Science and Earth Observation -
+				HGISEO
+			</condition>
+			<condition name = "subject" value = "mg">
+				Clinical Biochemistry and Toxicology;-HBCCBT
+			</condition>
+		
+		</condition>
+	</template>
+</category>
+		
+<category>
+			
+	<pattern>9</pattern>
+	<template>
+		<condition name ="gender" value ="">
+			You haven't told me you Gender(M/F).
+				</condition>
+				<condition name ="subject" value ="">
+					You haven't told me your Best A level subject.
+						</condition>
+	<condition name ="gender" value ="male">
+		<condition name ="subject" value ="cb">
+			Biotechnology and Molecular Biology-HBCBMB
+		</condition>
+		<condition name ="subject" value ="maths">
+			BSc Honours Data Science and Systems - HDSC
+		</condition>
+		<condition name ="subject" value ="chemistry">
+			BSc Honours Pollution and Environmental Chemistry - HPEC
+		</condition>
+		<condition name ="subject" value ="physics">
+			BSc Honours Medical Physics - HMPH
+		</condition>
+	</condition>
+
+	<condition name = "gender" value = "female">
+		<condition name ="subject" value="maths">
+			BSc Honours Mathematics and Computational Science - MCHor 
+	
+		</condition>
+		<condition name ="subject" value="maths">
+			 
+			BSc Honours Actuarial Science - HASC
+		</condition>
+		<condition name ="subject" value="mp">
+				
+			BSc Honours Space Science and Technology - HSST
+		
+		</condition>
+		<condition name ="subject" value="mp">
+				
+		
+			BSc Honours Industrial Physics - HIPH
+		</condition>
+		<condition name ="subject" value="cb">
+			BSc Honours Forensic Science - 
+			a) Forensic Biology and Forensic Biochemistry;
+	
+		</condition>
+		<condition name ="subject" value="cb">
+		
+			b) Forensic Biology and Forensic Chemistry;
+			
+		</condition>
+		<condition name ="subject" value="cb">
+			c) Forensic Biochemistry and Forensic Chemistry,
+		</condition>
+		<condition name ="subject" value="cp">
+			BSc Honours Forensic Science - HFSSC  Forensic Physics and Forensic Chemistry	
+		</condition>
+		<condition name ="subject" value="mc">
+			BSc Honours Industrial Chemistry-HICH
+		</condition>
+	 
+	</condition>
+
+	</template>
+	</category>
+
+
+		
+			<category>
+				<pattern>8</pattern>
+				<template>
+					<condition name ="gender" value ="">
+						You haven't told me you Gender(M/F).
+							</condition>
+							<condition name ="subject" value ="">
+								You haven't told me your Best A level subject.
+									</condition>
+				<condition name ="gender" value ="male">
+					<condition name ="subject" value ="mp">
+						BSc Honours Climate Science and Meteorology - HMCS
+
+					</condition>
+			<condition name ="subject" value ="geography">
+				BSc Geography and Landscape Ecology-HGLE
+					</condition>
+					<condition name ="subject" value ="physics">
+						BSc Honours Materials Science - HMS
+							</condition>
+							<condition name ="subject" value ="chemistry">
+								BSc Honours Food Science and Technology - HFST
+									</condition>
+									<condition name ="subject" value ="biology">
+										BSc Digital Disease Surveillance and Environmental Health-HDDSEH
+											</condition>
+
+											<condition name ="subject" value ="mp">
+												BSc Honours Materials Science - HMS
+											</condition>
+											<condition name ="subject" value ="cb">
+												Genetics and Bioengineering;-HBCGBE
+													</condition>
+													<condition name ="subject" value ="cg">
+														Plant Biochemistry and Medicinal Chemistry-HBCBPBMC
+															</condition>
+															<condition name ="subject" value ="maths">
+																BSc Applied Statistics - HASTS
+																	</condition>
+			
+				</condition>
+		
+				<condition name = "gender" value = "female">
+					<condition name ="subject" value ="cb">
+						Biotechnology and Molecular Biology-HBCBMB
+					</condition>
+					<condition name ="subject" value ="maths">
+						BSc Honours Data Science and Systems - HDSC
+					</condition>
+					<condition name ="subject" value ="chemistry">
+						BSc Honours Pollution and Environmental Chemistry - HPEC
+					</condition>
+					<condition name ="subject" value ="physics">
+						BSc Honours Medical Physics - HMPH
+					</condition>
+					<condition name ="subject" value ="maths">
+						BSc Applied Statistics - HASTS
+							</condition>
+
+				</condition>
+			</template>
+		</category>
+       
+		<category>
+			<pattern>7</pattern>
+			<template>
+				<condition name ="gender" value ="">
+					You haven't told me you Gender(M/F).
+						</condition>
+						<condition name ="subject" value ="">
+							You haven't told me your Best A level subject.
+								</condition>
+			<condition name ="gender" value ="male">
+				<condition name = "subject" value = "biology">
+					BSc Honours Biodiversity and Heritage Conservation-HBHC
+				</condition>
+				<condition name ="subject" value ="mp">
+					BSc Honours Climate Science and Meteorology - HMCS
+	
+				</condition>
+		<condition name ="subject" value ="geography">
+			BSc Geography and Landscape Ecology-HGLE
+				</condition>
+				<condition name ="subject" value ="physics">
+					BSc Honours Materials Science - HMS
+						</condition>
+						<condition name ="subject" value ="chemistry">
+							BSc Honours Food Science and Technology - HFST
+								</condition>
+								<condition name ="subject" value ="biology">
+								BSc Digital Disease Surveillance and Environmental Health-HDDSEH
+										</condition>
+	
+										<condition name ="subject" value ="mp">
+											BSc Honours Materials Science - HMS
+										</condition>
+										<condition name ="subject" value ="cb">
+											Genetics and Bioengineering;-HBCGBE
+												</condition>
+												<condition name ="subject" value ="cg">
+													Plant Biochemistry and Medicinal Chemistry-HBCBPBMC
+														</condition>
+														<condition name ="subject" value ="maths">
+															BSc Applied Statistics - HASTS
+																</condition>
+		
+	
+			</condition>
+	
+			<condition name = "gender" value = "female">
+
+				<condition name ="subject" value ="maths">
+					BSc Applied Statistics - HASTS
+						</condition>
+
+				<condition name = "subject" value = "biology">
+					BSc Honours Biodiversity and Heritage Conservation-HBHC
+				</condition>
+				<condition name ="subject" value ="mp">
+					BSc Honours Climate Science and Meteorology - HMCS
+	
+				</condition>
+		<condition name ="subject" value ="geography">
+			BSc Geography and Landscape Ecology-HGLE
+				</condition>
+				<condition name ="subject" value ="physics">
+					BSc Honours Materials Science - HMS
+						</condition>
+						<condition name ="subject" value ="chemistry">
+							BSc Honours Food Science and Technology - HFST
+								</condition>
+								<condition name ="subject" value ="biology">
+								BSc Digital Disease Surveillance and Environmental Health-HDDSEH
+										</condition>
+	
+										<condition name ="subject" value ="mp">
+											BSc Honours Materials Science - HMS
+										</condition>
+										<condition name ="subject" value ="cb">
+											Genetics and Bioengineering;-HBCGBE
+												</condition>
+												<condition name ="subject" value ="cg">
+													Plant Biochemistry and Medicinal Chemistry-HBCBPBMC
+														</condition>
+	
+		
+							  
+			</condition>
+		</template>
+	</category>
+	
+ </topic>
+
+ <category>
+
+	
+ <pattern>SOCIAL AND BEHAVIOURAL SCIENCES</pattern>
+	<template>
+	  Okay,  Let's talk about  <set name="topic">SOCIAL AND BEHAVIOURAL SCIENCES</set>
+	  5 'O' Level passes including English Language is compulsory. At least 2 'A' level
+       passes in relevant subjects.
+	</template>
+ </category>
+
+  <topic name="SOCIAL AND BEHAVIOURAL SCIENCES">
+  <category>
+	<pattern>SOCIAL AND BEHAVIOURAL SCIENCES</pattern>
+	<template>
+		5 'O' Level passes including English Language is compulsory. At least 2 'A' level
+       passes in relevant subjects.
+	</template>
+  </category>
+ </topic>
+
+ <category>
+	<pattern>Vet Sciences</pattern>
+	<template>
+	  Okay,  Let's talk about  <set name="topic">Vet Sciences</set> .
+	  3‘A’Levels Chemistry AND Biology (Compulsory) and any one of Mathematics ,
+	  Physics or Agriculture
+	</template>
+  </category>
+
+ <topic name="Vet Sciences">
+  <category>
+	<pattern>Vet Sciences</pattern>
+	<template>
+		3‘A’Levels Chemistry AND Biology (Compulsory) and any one of Mathematics ,
+         Physics or Agriculture
+	</template>
+  </category>
+
+ </topic>
+
+
+
+ <category> 
+    <pattern>AGRICULTURE ENVIRONMENT AND FOOD SYSTEMS</pattern>
+	<template>
+	  Okay,  Let's talk about  <set name="topic">AGRICULTURE ENVIRONMENT AND FOOD SYSTEMS</set>.
+	  In all the Degree programmes, Applicants should hold at least 5 ‘O’ Level passes
+	  including Proficiency in the language of instruction, Mathematics and one
+	 Science Subject from: Biology, Chemistry, Physics, Integrated Science, Physical
+	  Science, Agriculture or Combined Science and at least 2 'A' level passes
+	</template>
+ </category>
+ <topic name="AGRICULTURE ENVIRONMENT AND FOOD SYSTEMS">
+  <category>
+	<pattern>AGRICULTURE ENVIRONMENT AND FOOD SYSTEMS</pattern>
+	<template>
+		In all the Degree programmes, Applicants should hold at least 5 ‘O’ Level passes
+         including Proficiency in the language of instruction, Mathematics and one
+        Science Subject from: Biology, Chemistry, Physics, Integrated Science, Physical
+         Science, Agriculture or Combined Science and at least 2 'A' level passes
+	</template>
+  </category>
+ </topic>
+
+ <category>
+	<pattern>ARTS AND HUMANITIES</pattern>
+	<template>
+	  Okay,  Let's talk about  <set name="topic">ARTS AND HUMANITIES</set>
+	  5 'O' level passes including English Language and 2 Arts subjects at ‘A’ Level are
+		compulsory for Admission in the Faculty of Arts .
+	</template>
+  </category>
+
+  <topic name="ARTS AND HUMANITIES">
+  <category>
+	<pattern>ARTS AND HUMANITIES</pattern>
+	<template>
+		5 'O' level passes including English Language and 2 Arts subjects at ‘A’ Level are
+		compulsory for Admission in the Faculty of Arts .
+	</template>
+  </category>
+ </topic>
+
+
+ <category>
+	<pattern>BUSINESS MANAGEMENTS CIENCES AND ECONOMICS</pattern>
+	<template>
+	  Okay,  Let's talk about  <set name="topic">BUSINESS MANAGEMENTS CIENCES AND ECONOMICS</set>.
+	  5 "O" level passes including English and Maths. 2 'A' level passes. Those with a
+		relevant Diploma or equivalent as prescribed under the National Qualifications
+		Framework will also be considered.
+	</template>
+  </category>
+
+  <topic name="BUSINESS MANAGEMENTS CIENCES AND ECONOMICS">
+  <category>
+	<pattern>BUSINESS MANAGEMENTS CIENCES AND ECONOMICS</pattern>
+	<template>
+		5 "O" level passes including English and Maths. 2 'A' level passes. Those with a
+		relevant Diploma or equivalent as prescribed under the National Qualifications
+		Framework will also be considered.
+	</template>
+  </category>
+ </topic>
+
+ <category>
+	
+	<pattern>COMPUTER ENGINEERING INFORMATICS COMMUNICATION</pattern>
+	<template>
+	  Okay,  Let's talk about  <set name="topic">COMPUTER ENGINEERING INFORMATICS COMMUNICATION</set>
+	</template>
+  </category>
+
+  <topic name="COMPUTER ENGINEERING INFORMATICS COMMUNICATION">
+  <category>
+	<pattern>COMPUTER ENGINEERING INFORMATICS COMMUNICATION</pattern>
+	<template>
+		5 ‘O’ Levels – including English Language , Maths and science subjects for all
+		degree programmes are a requirement . 'A' level passes in any 2 of the
+		following:Maths,Computer Science or Mathematics. Applicants with relevant IT
+		diplomas can also apply and be considered.
+	</template>
+  </category>
+ </topic>
+
+
+ <category>
+	<pattern>ENGINEERING</pattern>
+	<template>
+		Okay,  Let's talk about		<set name="topic">ENGINEERING</set>.These are the requirement
+		5 O' Levels – including English Language , Maths and science subjects for all
+		degree programmes are a requirement. 'A' level Physics or equivalent is a must.What's your best A`level subject.(Either 1 or 2subjects)
+
+	</template>
+ </category>
+
+
+ <topic name="ENGINEERING">
+
+  <category>
+	<pattern>15</pattern>
+	<template>
+		<condition name ="gender" value ="">
+			You haven't told me you Gender(M/F).
+				</condition>
+				<condition name ="subject" value ="">
+					You haven't told me your Best A level subject.
+						</condition>
+
+	      <condition name ="gender" value ="male">
+
+		   <condition name ="subject" value ="mp">
+			BSc Honours Mechanical Engineering-HENMECH
+	     	</condition>
+			 
+			 <condition name ="subject" value ="mp">
+				BSc Industrial Engineering-HENIND
+				 </condition>
+				 <condition name ="subject" value ="maths">
+					BSc Honours Mechanical Engineering-HENMECH
+					 </condition>
+			 <condition name ="subject" value ="mg">
+				BSc Honours Geomatics Engineering with the following
+               options:Geoinformatics Engineering -(HGEG) OR Surveying (HGES)
+				 </condition>
+				 
+				 
+	
+
+	      </condition>
+
+		   <condition name = "gender" value = "female">
+		  
+			<condition name ="subject" value ="mp">
+				BSc Honours Mechanical Engineering-HENMECH
+				 </condition>
+				 
+				 <condition name ="subject" value ="mp">
+					BSc Industrial Engineering-HENIND
+					 </condition>
+	
+				 <condition name ="subject" value ="mg">
+					BSc Honours Geomatics Engineering with the following
+	             options:Geoinformatics Engineering -(HGEG) OR Surveying (HGES)
+					 </condition>
+					 
+					 <condition name ="subject" value ="mp">
+						BSc Honours Electrical and Electronic Engineering-HENELEN
+						 </condition>
+
+						 <condition name ="subject" value ="mp">
+							BSc Honours Mechatronics-HENMTR
+							 </condition>
+							 
+							 <condition name ="subject" value ="maths">
+								BSc Honours Mechanical Engineering-HENMECH
+								 </condition>
+
+								 <condition name ="subject" value ="maths">
+									BSc Honours Automotive Engineering-AUTO
+									 </condition>
+									 <condition name ="subject" value ="geography">
+										BSc Honours Mining and Geological Engineering-HMIE
+										 </condition>
+									
+										 <condition name ="subject" value ="chemistry">
+											BSc Honours Chemical Engineering-HCE
+											 </condition> 
+											 
+										 <condition name ="subject" value ="physics">
+											BSc Honours Mechatronics-HENMTR
+											 </condition> 
+										  
+								 
+	
+		   </condition>
+
+		   </template>
+		
+
+		   </category>
+
+
+	  <category>
+		<pattern>14</pattern>
+		<template>
+		<condition name ="gender" value ="">
+			You haven't told me you Gender(M/F).
+				</condition>
+				<condition name ="subject" value ="">
+					You haven't told me your Best A level subject.
+						</condition>
+		<condition name ="gender" value ="male">
+			<condition name ="subject" value ="maths">
+				BSc Honours Automotive Engineering-AUTO
+				 </condition>
+				 <condition name ="subject" value ="geography">
+					BSc Honours Mining and Geological Engineering-HMIE
+					 </condition>
+				
+					 <condition name ="subject" value ="chemistry">
+						BSc Honours Chemical Engineering-HCE
+						 </condition> 
+						 
+					 <condition name ="subject" value ="physics">
+						BSc Honours Mechatronics-HENMTR
+						 </condition> 
+                      
+
+		</condition>
+
+		<condition name = "gender" value = "female">
+			<condition name ="subject" value ="maths">
+				BSc Honours Automotive Engineering-AUTO
+				 </condition>
+				 <condition name ="subject" value ="geography">
+					BSc Honours Mining and Geological Engineering-HMIE
+					 </condition>
+				
+					 <condition name ="subject" value ="chemistry">
+						BSc Honours Chemical Engineering-HCE
+						 </condition> 
+						 
+					 <condition name ="subject" value ="physics">
+						BSc Honours Mechatronics-HENMTR
+						 </condition> 
+
+						 <condition name ="subject" value ="mg">
+							BSc Honours Real Estate-HRE
+							 </condition> 
+							 
+                      
+		</condition>
+
+		</template>
+
+		</category>
+
+		<category>
+			<pattern>13</pattern>
+			<template>
+			<condition name ="gender" value ="">
+				You haven't told me you Gender(M/F).
+					</condition>
+					<condition name ="subject" value ="">
+						You haven't told me your Best A level subject.
+							</condition>
+			<condition name ="gender" value ="male">
+				<condition name ="subject" value ="maths">
+					BSc Honours Civil Engineering-HENCENG
+					 </condition>
+					 <condition name ="subject" value ="geography">
+						BSc Honours Spatial Planning and Management-HSPM
+						 </condition>
+					
+						 <condition name ="subject" value ="chemistry">
+							BSc Honours Architecture-BARCH
+							 </condition> 
+							 
+						 <condition name ="subject" value ="physics">
+							BSc Honours Energy and Power Systems Engineering-HENPENG
+							 </condition> 
+						  
+	
+			</condition>
+	
+			<condition name = "gender" value = "female">
+				<condition name ="subject" value ="maths">
+					BSc Honours Civil Engineering-HENCENG
+					 </condition>
+					 <condition name ="subject" value ="geography">
+						BSc Honours Spatial Planning and Management-HSPM
+						 </condition>
+					
+						 <condition name ="subject" value ="chemistry">
+							BSc Honours Architecture-BARCH
+							 </condition> 
+							 
+						 <condition name ="subject" value ="physics">
+							BSc Honours Energy and Power Systems Engineering-HENPENG
+							 </condition> 
+							</condition>
+							
+	
+			</template>
+	
+			</category>
+	   </topic>
+
+
+
+	   
+
+</aiml>

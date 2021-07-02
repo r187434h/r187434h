@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<aiml version="1.0">
+
+<meta name="language" content="en"/>
+
+
+<category>
+     <pattern>ONLINE APPLICATION</pattern>
+     <template>
+		Click on this link to view the Procedure required for  First Year BE Admissions :	https://www.emhare.uz.ac.zw/ApplicantsDetails/which_form
+      </template>
+</category>
+
+<category>
+	<pattern>_ ONLINE *</pattern>
+	<template>
+	  <srai>ONLINE APPLICATION</srai>
+	</template>
+  </category>
+
+
+<category>
+      <pattern>UNDERGRADUATE</pattern>
+	  <template><srai>UNDERGRADUATE PROGRAMME</srai></template>
+</category>
+<category>
+      <pattern>POSTGRADUATE</pattern>
+      <template>
+		Click on this link to view the documents required for  First Year BE Admissions : https://www.uz.ac.zw/index.php/admissions/post-application-overview
+	  </template>
+</category>
+	
+<category>
+      <pattern>DIPLOMAS</pattern>
+      <template>
+		Click on this link to view the documents required for  First Year BE Admissions : https://www.uz.ac.zw/index.php/admissions/fees-schedule 
+	  </template>
+</category>
+
+<category>
+      <pattern>WHY CHOOSE THE UNIVERSITY OF ZIMBABWE</pattern>
+      <template>
+	
+It is no wonder that our graduates are sought-after locally, regionally and globally. Our insistence on quality assurance in the curriculum, student resources and facilities has paid huge dividends.<br></br> In addition to our academic rigour, the University’s social skills development programme empowers students to manage their lives responsibly now and into the future.
+
+<br></br>The University offers 84 accredited undergraduates programmes and 71 specialised post graduate degree in Agriculture, Arts, Commerce, Education, Engineering, Law, Health Sciences, Science, Social Sciences and Veterinary Studies. In today’s world of rapid information and technological advancement, the University has become an ICT-driven institution whose students and staff enjoy fast and reliable wireless internet connectivity which accesses them to the latest e-library resources from virtually any point on campus and their mobile phones. All our graduates are therefore highly proficient in the use of ICT in their different disciplines.
+
+<br></br>The University boasts of a well-established tradition and enjoys an exceptional reputation both internationally and internally as it is among top universities in Africa. Our leadership in research and university education is evidenced by the numerous accolades presented annually to our scholars, researchers and students at the local, regional and international levels. Awards such as Pan-African Moot Court Competition trophy have found a permanent home at the University of Zimbabwe.
+
+Be part of the UZ community and experience “The Leading Academic Brand”
+		  
+
+	  </template>
+</category>
+
+<category>
+	<pattern> WHY CHOOSE  *</pattern>
+	<template><srai>WHY CHOOSE THE UNIVERSITY OF ZIMBABWE</srai></template>
+</category>
+</aiml>

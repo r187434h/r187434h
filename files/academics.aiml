@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<aiml version="1.0">
+
+<meta name="language" content="en"/>
+
+
+   <category>
+      <pattern> UNDERGRADUATE PROGRAMME </pattern>
+      <template> 
+         Which field do you wish to persue:<br></br>
+         1.SCIENCES<br></br>
+         2.LAW<br></br>
+         3. ENGINEERING <br></br>
+         5.AGRICULTURE ENVIRONMENT AND FOOD SYSTEMS<br></br>
+         6.EDUCATION<br></br>
+         7.BUSINESS MANAGEMENT SCIENCES AND ECONOMICS<br></br>
+         8.MEDICINE AND HEALTH SCIENCES<br></br>
+        
+         
+ </template>
+    </category> 
+    <category>
+  <pattern>_ UNDERGRADUATE PROGRAMME</pattern>
+  <template><srai>UNDERGRADUATE PROGRAMME</srai></template>
+</category>
+<category>
+  <pattern>_ UNDERGRADUATE PROGRAMME * </pattern>
+  <template><srai>UNDERGRADUATE PROGRAMME</srai></template>
+</category>
+
+<category>
+   <pattern>_ PROGRAMME * </pattern>
+   <template><srai>UNDERGRADUATE PROGRAMME</srai></template>
+ </category>
+ 
+ <category>
+   <pattern>_ DEGREE * </pattern>
+   <template><srai>UNDERGRADUATE PROGRAMME</srai></template>
+ </category>
+ <category>
+  <pattern>_ PROGRAM * </pattern>
+  <template><srai>UNDERGRADUATE PROGRAMME</srai></template>
+</category>
+
+
+
+</aiml>

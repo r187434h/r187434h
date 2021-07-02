@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<aiml version="1.0">
+
+<meta name="language" content="en"/>
+
+<category>
+      <pattern>HI</pattern>
+
+      <template>
+  
+	<random>
+		<li>Hello there! l am <set name = "name">Clara</set> your  reliable counselling assistant .What is Your name? </li>
+		<li>Hey!  l am      <set name = "name">Clara</set> your  reliable counselling assistant . What is Your name?</li>
+	</random>
+	  </template>
+    </category>
+    <category>
+      <pattern>HIE</pattern>
+      <template>
+		<srai>HI</srai>
+	  </template>
+    </category>
+
+<category>
+      <pattern>HELLO</pattern>
+      <template>
+		<srai>HI</srai>
+	  </template>
+    </category>
+
+<category>
+      <pattern>WHAT IS YOUR NAME</pattern>
+      <template>
+		You suggest something!
+	  </template>
+    </category>
+
+<category>
+      <pattern>WHAT IS YOUR NAME?</pattern>
+      <template>
+		You suggest something!
+	  </template>
+    </category>
+
+<category>
+      <pattern>LET YOUR NAME BE *</pattern>
+      <template>
+		Okay, <set name = "name"> <star/></set> is a good name!
+	  </template>
+    </category>
+
+<category>
+      <pattern>HOW ABOUT *</pattern>
+      <template>
+		Okay, <set name = "name"> <star/></set> is a good name!
+	  </template>
+    </category>
+
+<category>
+      <pattern>MY NAME IS *</pattern>
+      
+      
+      <template>
+		Oh! Nice to meet you<set name = "username"> <star/></set> .
+            Please Do State your Gender(male/female)!
+	  </template>
+    </category>
+
+    
+
+
+
+<category>
+      <pattern>MALE</pattern>
+      <template><think><set name = "gender">male</set></think>
+       How can l help you today Sir?
+      </template>
+  </category>
+  
+  
+  <category>
+      <pattern>FEMALE</pattern>
+      <template><think><set name = "gender">female</set></think>
+       How can l help you today Ma'am?
+      </template>
+  </category>
+  
+  
+  <category>
+    <pattern>F</pattern>
+    <template><srai>FEMALE</srai></template>
+  </category>
+  
+  <category>
+    <pattern>M</pattern>
+    <template><srai>MALE</srai></template>
+  </category>
+
+<category>
+      <pattern>THANK YOU *</pattern>
+      <template>
+		Your most welcome! 
+	  </template>
+    </category>
+
+<category>
+      <pattern>THANK YOU</pattern>
+      <template>
+		Your most welcome! 
+	  </template>
+    </category>
+
+<category>
+      <pattern>BYE *</pattern>
+      <template>
+		Goodbye! 
+	  </template>
+    </category>
+
+<category>
+      <pattern>BYE</pattern>
+      <template>
+		Goodbye! 
+	  </template>
+    </category>
+
+  
+    <category>
+      <pattern>*</pattern>
+      <template>
+        <random>
+          <li>My brain does not have a response for that </li>
+          <li>Can you please rephrase that with fewer ideas, or different thoughts?</li>
+          <li>What do you really want to ask me?</li>
+          <li>What are we talking about again?</li>
+          <li>I do not understand.</li>
+
+        </random>
+	  </template>
+    </category>
+
+    <category>
+      <pattern>NAME</pattern>
+      <template>
+		Okay,  You said your name is<think><set name="topic">NAME</set></think> 
+
+	  </template>
+    </category>
+    <topic name="NAME">
+		
+      <category>
+         <pattern>*</pattern>
+       
+          <template>
+            Oh! Nice to meet you<set name = "username"> <star/></set> .
+                    Please Do State your Gender(M/F)!
+            </template>
+        
+       
+   
+         </category>
+         
+ <category>
+  <pattern>_ DEGREE * </pattern>
+  <template><srai>UNDERGRADUATE PROGRAMME</srai></template>
+</category>
+ <category>
+  <pattern>_ UNDERGRADUATE PROGRAMME</pattern>
+  <template><srai>UNDERGRADUATE PROGRAMME</srai></template>
+</category>
+<category>
+  <pattern>_ UNDERGRADUATE PROGRAMME * </pattern>
+  <template><srai>UNDERGRADUATE PROGRAMME</srai></template>
+</category>
+
+<category>
+   <pattern>_ PROGRAMME * </pattern>
+   <template><srai>UNDERGRADUATE PROGRAMME</srai></template>
+ </category>
+ 
+
+       </topic>
+  
+
+</aiml>

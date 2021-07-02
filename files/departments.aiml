@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<aiml version="1.0">
+
+<meta name="language" content="en"/>
+
+
+
+<category>
+	<pattern>DEPARTMENT</pattern>
+	<template>
+        The University of Zimbabwe has seventy four (74) teaching departments whose operations are governed by the Departmental Governance Ordinance Number 25.   
+			<think><set name="topic">DEPARTMENT</set></think><br></br>
+			
+Faculty of Science<br></br>
+Faculty of Law<br></br>
+Faculty of Engineering And The Built Environment<br></br>
+Faculty of Medicine And Health Sciences<br></br>
+Faculty of Education<br></br>
+Faculty of Agriculture Environment And Food Systems<br></br>
+Faculty of Arts And Humanities<br></br>
+Faculty of Business Management Sciences And Economics<br></br>
+Faculty of Social And Behavioural Sciences<br></br>
+Faculty of Veterinary Science<br></br>
+
+
+	</template>
+   
+ </category>
+
+ <topic name="DEPARTMENT">
+
+    <category>
+        <pattern>FACULTY OF SCIENCE</pattern>
+        <template>
+1. Biochemistry<br></br>
+2.Biological Sciences<br></br>
+3.Chemistry<br></br>
+4.Computer Science<br></br>
+5.Geology<br></br>
+6.Institute of Food and Nutrition Sciences<br></br>
+7.Institute of Mining Research<br></br>
+8.Mathematics<br></br>
+9.Physics<br></br>
+10.Statistics<br></br>
+        </template>
+    </category>
+
+    <category>
+        <pattern>FACULTY OF LAW</pattern>
+        <template>
+1.Public Law<br></br>
+2.Private Law<br></br>
+3.Procedural Law<br></br>
+4.Commercial Law<br></br>
+5.Southern and East African Regional Centre for Women's Law<br></br>
+        </template>
+    </category>
+
+    <category>
+        <pattern>FACULTY OF VETERINARY SCIENCE</pattern>
+        <template>
+ 1. Preclinical Veterinary Studies<br></br>
+2.Paraclinical Veterinary Studies<br></br>
+3.Clinical Veterinary Studies<br></br>
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>FACULTY OF SOCIAL AND BEHAVIOURAL SCIENCES</pattern>
+        <template>
+1. Centre for Applied Social Sciences<br></br>
+2.Economics<br></br>
+3.Political and Administrative Studies<br></br>
+4.Psychology<br></br>
+5.Rural and Urban Planning<br></br>
+6.Sociology<br></br>
+7.Centre for Population Studies<br></br>
+8.School of Social Work<br></br>
+        </template>
+    </category>
+
+    <category>
+        <pattern>FACULTY OF MEDICINE AND HEALTH SCIENCES</pattern>
+        <template>
+          1.  Anaesthetics<br></br>
+2.Anatomy<br></br>
+3.Chemical Pathology<br></br>
+4.Clinical. Pharmacology<br></br>
+5.Community Medicine<br></br>
+6.Haematology<br></br>
+7.Histopathology<br></br>
+8.Institute of Continuing Health Education<br></br>
+9.Medical Laboratory Science<br></br>
+10.Immunology<br></br>
+11.Med. Microbiology<br></br>
+12.Medicine<br></br>
+13.Nursing Science<br></br>
+14.Obstetrics and Gynaecology<br></br>
+15.Ophthalmology<br></br>
+16.Pediatrics and Child Health<br></br>
+17.Pharmacy<br></br>
+18.Physiology<br></br>
+19.Psychiatry<br></br>
+20.Radiology<br></br>
+21.Rehabilitation<br></br>
+22.Surgery<br></br>
+23.Dentistry<br></br>
+        </template>
+    </category>
+
+    <category>
+        <pattern>FACULTY OF EDUCATION</pattern>
+        <template>
+1.Educational Administration<br></br>
+2.Educational Foundations<br></br>
+3.Technical Education<br></br>
+4.Science and Mathematics Education.<br></br>
+5.Curriculum and Arts Education.<br></br>
+6.Teacher Education<br></br>
+7.Adult Education<br></br>
+        </template>
+    </category>
+
+    <category>
+        <pattern>FACULTY OF AGRICULTURE ENVIRONMENT AND FOOD SYSTEMS</pattern>
+        <template>
+           1. Crop Science<br></br>
+2.Animal Science<br></br>
+3.Soil Science and Agricultural Engineering Department<br></br>
+4.Agriculture Economics and Extension<br></br>
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>FACULTY OF ARTS AND HUMANITIES</pattern>
+        <template>
+            1. Department of African Languages and Literature
+2.Department of Economic History
+3.Department of English
+4.Department of Geography and Environmental Science
+5.Department of History
+6.Department of Linguistics
+7.Department of Modern Languages
+8.Department of Religious Studies Classics and Philosophy
+        </template>
+    </category>
+
+    <category>
+        <pattern>MECHANICAL INDUSTRY</pattern>
+        <template>
+            Mechanical Industry Interaction
+		Link: http://mctrgit.ac.in/Industry%20Interaction_2019.pdf
+        </template>
+    </category>
+</topic>
+</aiml>
